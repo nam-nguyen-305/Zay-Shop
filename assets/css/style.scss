@@ -468,6 +468,12 @@ body {
                         margin-bottom: 1.6rem;
                     }
                 }
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -1686,6 +1692,7 @@ body {
     }
     .categories {
         .container {
+            
             .categories-items {
                 flex-direction: column;
                 .c-item {
@@ -1697,12 +1704,17 @@ body {
     .featured-product {
         .container {
             .feature-intro {
-                width: 100%;
+
+                section{
+                    width: 100%;
+                }
+                
             }
             .feature-items {
                 display: flex;
                 .item {
                     width: 100%;
+                    margin-left: 0;
                 }
             }
         }

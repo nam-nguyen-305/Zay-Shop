@@ -579,6 +579,14 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.featured-product .container .feature-items .item:first-of-type {
+  margin-left: 0;
+}
+
+.featured-product .container .feature-items .item:last-of-type {
+  margin-right: 0;
+}
+
 .footer {
   background-color: #212934 !important;
   color: #dcdde1;
@@ -2030,7 +2038,7 @@ body {
   .categories .container .categories-items .c-item {
     width: 100%;
   }
-  .featured-product .container .feature-intro {
+  .featured-product .container .feature-intro section {
     width: 100%;
   }
   .featured-product .container .feature-items {
@@ -2040,6 +2048,7 @@ body {
   }
   .featured-product .container .feature-items .item {
     width: 100%;
+    margin-left: 0;
   }
   .feature-items {
     -webkit-box-orient: vertical;
