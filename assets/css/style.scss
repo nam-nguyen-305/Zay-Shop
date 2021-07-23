@@ -162,6 +162,10 @@ body {
                     line-height: 7rem;
                     padding-right: 0.5rem;
                     padding-left: 0.5rem;
+                    transition: all .4s;
+                    &:hover {
+                        color: $colorPrimary;
+                    }
                 }
             }
         }
@@ -418,56 +422,63 @@ body {
                 margin-bottom: 1.5rem;
                 margin-left: 1.2rem;
                 margin-right: 1.2rem;
+                section {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        width: 100%;
+                        border-top-left-radius: 0.3rem;
+                        border-top-right-radius: 0.3rem;
+                    }
+                    .cart-body {
+                        padding: 1.6rem 1.6rem;
+                        background: white;
+                        line-height: 1.5;
+                        flex: 1 1 auto;
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+                            list-style: none;
+                            margin-bottom: 1.6rem;
+                            font-size: 1.8rem;
+                            .rate {
+                                font-weight: 800;
+                                .yellow {
+                                    color: #ede861;
+                                }
+                                .gray {
+                                    color: #bcbcbc;
+                                }
+                            }
+                            .prize {
+                                color: #bcbcbc;
+                                font-weight: 300;
+                            }
+                        }
+                        h1 {
+                            color: #212529;
+                            font-size: 3rem;
+                            margin-bottom: 0.8rem;
+                            font-weight: 300;
+                        }
+                        .text {
+                            color: #212529;
+                            font-size: 1.8rem;
+                            font-weight: 300;
+                            margin-bottom: 1.6rem;
+                        }
+                        .text-mute {
+                            color: #bcbcbc;
+                            font-size: 1.8rem;
+                            margin-bottom: 1.6rem;
+                        }
+                    }
+                }
                 &:hover {
                     box-shadow: 0px 0px 10px 2px #e1e1e1;
                 }
-                img {
-                    width: 100%;
-                    border-top-left-radius: 0.3rem;
-                    border-top-right-radius: 0.3rem;
-                }
-                .cart-body {
-                    padding: 1.6rem 1.6rem;
-                    background: white;
-                    line-height: 1.5;
-                    ul {
-                        display: flex;
-                        justify-content: space-between;
-                        list-style: none;
-                        margin-bottom: 1.6rem;
-                        font-size: 1.8rem;
-                        .rate {
-                            font-weight: 800;
-                            .yellow {
-                                color: #ede861;
-                            }
-                            .gray {
-                                color: #bcbcbc;
-                            }
-                        }
-                        .prize {
-                            color: #bcbcbc;
-                            font-weight: 300;
-                        }
-                    }
-                    h1 {
-                        color: #212529;
-                        font-size: 3rem;
-                        margin-bottom: 0.8rem;
-                        font-weight: 300;
-                    }
-                    .text {
-                        color: #212529;
-                        font-size: 1.8rem;
-                        font-weight: 300;
-                        margin-bottom: 1.6rem;
-                    }
-                    .text-mute {
-                        color: #bcbcbc;
-                        font-size: 1.8rem;
-                        margin-bottom: 1.6rem;
-                    }
-                }
+                
                 &:first-of-type {
                     margin-left: 0;
                 }
@@ -1624,6 +1635,25 @@ body {
             }
         }
     }
+    .categories {
+        .container {
+            .categories-intro {
+                section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .featured-product {
+        .container {
+            .feature-intro {
+                section {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
     //============================
     .our-brand {
         .container {
@@ -1738,6 +1768,20 @@ body {
                             &:last-of-type {
                                 padding-left: 0;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shop {
+        .container {
+            .main {
+                .main-product {
+                    .top-menu {
+                        flex-direction: column;
+                        .right {
+                            width: 100%;
                         }
                     }
                 }
